@@ -1,0 +1,21 @@
+{
+    "name": "ashfaq1701/laravel-chat",
+    "description": "A Basic channel based chat implementation for laravel 5.2 or less",
+    "type": "package",
+    "require": {
+        "codemash/laravel-socket": "^1.0",
+        "fzaninotto/faker": "^1.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md Ashfaq Salehin",
+            "email": "ashfaq1701@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ashfaq1701\\LaravelChat\\": "src/"
+        }
+    }
+}

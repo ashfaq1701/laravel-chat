@@ -1,0 +1,31 @@
+#chat-body
+{
+	height: 71vh;
+	overflow: scroll;
+}
+
+#chat-footer
+{
+	height: 9vh;
+}
+
+#contacts-sidebar
+{
+	height: 86vh;
+	overflow: scroll;
+}
+
+.chat-grid
+{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-bottom: 15px;
+	line-height: 40px;
+	height: 40px;
+}
+
+.file-message-image
+{
+	height: 200px;
+	width: 200px;
+}
