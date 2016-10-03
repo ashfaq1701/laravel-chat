@@ -41,7 +41,7 @@ class ClientConnectedListener
 						'channel_id' => $channel->id,
 						'online' => $user->is_online
 				];
-				$client = $event->clients->where('id', $otherUser->connection_id)->first();
+				$client = $event->clients->get($otherUser->connection_id);
 				if(!empty($client))
 				{
 					$client->send('onlineStatus', json_encode($object));

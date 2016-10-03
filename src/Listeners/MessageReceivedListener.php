@@ -44,7 +44,7 @@ class MessageReceivedListener
 			{
 				if(!(($currentUser->is_online == 0) || empty($currentUser->is_online)))
 				{
-					$client = $event->clients->where('id', $currentUser->connection_id)->first();
+					$client = $event->clients->get($currentUser->connection_id);
 					$client->send('textMessage', json_encode($message));
 				}
 			}
@@ -59,7 +59,7 @@ class MessageReceivedListener
 			{
 				if(!(($currentUser->is_online == 0) || empty($currentUser->is_online)))
 				{
-					$client = $event->clients->where('id', $currentUser->connection_id)->first();
+					$client = $event->clients->get($currentUser->connection_id);
 					$client->send('fileMessage', json_encode($message));
 				}
 			}
